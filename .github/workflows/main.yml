@@ -21,7 +21,7 @@ jobs:
       - name: Download code
         uses: actions/download-artifact@v4
       - name: run linting
-        uses: super-linter/super-linter/slim
+        uses: actions/super-linter/slim
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB.TOKEN }}
